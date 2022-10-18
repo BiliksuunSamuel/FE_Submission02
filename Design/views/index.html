@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <!--scripts-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"
+      integrity="sha512-bHeT+z+n8rh9CKrSrbyfbINxu7gsBmSHlDCb3gUF1BjmjDzKhoKspyB71k0CIRBSjE5IVQiMMVBgCWjF60qsvA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/localStorage/2.0.1/localStorage.min.js"
+      integrity="sha512-Om7n4oPnCk0KyQ6M3i8agnyW+vBM8ileUcLwqT9UdRHHuh4tuZSf8pkcGE4quTfj0LoU4cN38QDsaDKdJM6ZYQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Biliksuun Samuel-HomeWork Solution</a>
+      </div>
+    </nav>
+    <div class="container mui-container">
+      <div
+        style="position: relative"
+        class="container container-sm mui-container form-group"
+      >
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+          "
+          class="spinner-container loader"
+          id="loader"
+        >
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <input
+          class="form-control mb-1"
+          name="username"
+          placeholder="Username"
+          id="username"
+        />
+        <input
+          class="form-control mb-1"
+          placeholder="Password"
+          type="Password"
+          name="password"
+          id="password"
+        />
+        <button
+          id="login-btn"
+          class="btn mt-2 btn-sm btn-primary btn-fullwidth"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../services/controller.js" type="module"></script>
+    <script type="module" src="../services/storage.js"></script>
+    <script type="module" src="../routes/index.js"></script>
+    <script type="module" src="../constants/index.js"></script>
+    <script type="module" src="../functions/main.js"></script>
+  </body>
+</html>
